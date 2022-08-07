@@ -4,7 +4,7 @@ export default function IndexPage(){
 	return (
 		<div>
 			<h1 className="text-3xl font-bold underline">
-				Hello World
+				Testing GH Pages
 			</h1>
 		</div>
 	)
