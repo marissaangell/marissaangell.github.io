@@ -6,6 +6,7 @@ export default function IndexPage(){
 			<h1 className="text-3xl font-bold underline">
 				Testing GH Pages
 			</h1>
+			<button class="btn btn-primary">Button</button>
 		</div>
 	)
 }
