@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[678],{6558:function(e,t,n){n.r(t),n.d(t,{default:function(){return r}});var l=n(7294);function r(){return l.createElement("div",null,l.createElement("h1",{className:"text-3xl font-bold underline"},"Testing GH Pages"))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-a31eaaa3e081a32b4881.js.map
