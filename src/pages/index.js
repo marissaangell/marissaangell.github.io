@@ -1,18 +1,24 @@
 import * as React from "react"
 
+import Layout from '../components/layout'
+import DetailsList from '../components/detailsList'
+
 export default function IndexPage(){
 	return (
-		<div>
-			<h1 className="text-3xl font-bold underline">
-				Testing GH Pages
-			</h1>
-			<button class="btn btn-primary">Button</button>
-		</div>
+		<Layout pageTitle="Home">
+			<div>
+				
+			</div>
+		</Layout>
 	)
 }
 
 
-
+// <h1 className="text-3xl font-bold underline">
+// 	Testing GH Pages
+// </h1>
+// <button class="btn btn-primary">Button</button>
+// <DetailsList/>
 
 
 
