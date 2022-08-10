@@ -12,4 +12,16 @@ module.exports = {
 		require('@tailwindcss/typography'),
 		require("daisyui")
 	],
+	// daisyui: {
+	//     themes: [
+	//       {
+	//         dark: {
+	//           ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
+	//           primary: "#F04152",
+	//           secondary: "#A35385",
+	//           accent: "#74b0a3",
+	//         },
+	//       },
+	//     ],
+ //  	},
 }
