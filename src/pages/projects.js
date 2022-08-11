@@ -7,38 +7,12 @@ import CardGrid from '../components/cardGrid'
 
 const pageTitle = 'Projects'
 
-const cardsArray = [
-  {
-    title: 'Competitive exchange rates',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    date: '2018',
-    tags: ['Snippet', 'Rails', 'Info']
-  },
-  {
-    title: 'No hidden fees',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-  	date: '2022',
-  	tags: ['Snippet', 'Rails', 'Fees']
-  },
-  {
-    title: 'Transfers are instant',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    date: '2019',
-    tags: ['Transfers', 'Rails', 'Info']
-  },
-  {
-    title: 'Mobile notifications',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    date: '2021',
-    tags: ['Mobile', 'Info']
-  },
-]
-
 const ProjectsPage = ({ data }) => {
 	return (
-		<Layout pageTitle={pageTitle}>
+		<Layout pageTitle={pageTitle} navCurrent="/projects">
 			<Heading text={pageTitle} />
 			<div>
+        <div className="divider" />
 				<CardGrid cards={data.allMdx.nodes}/>
 			</div>
 		</Layout>
@@ -54,6 +28,7 @@ export const query = graphql`
           title
           description
           tags
+          languages
         }
         id
         slug
