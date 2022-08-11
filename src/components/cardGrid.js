@@ -1,6 +1,5 @@
 import * as React from "react"
 
-import GradientCard from './gradientCard'
 import GradientCardFull from './gradientCardFull'
 
 const CardGrid = ({ cards }) => {

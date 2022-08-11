@@ -24,10 +24,10 @@ export const query = graphql`
       id
       body
       frontmatter {
-        class
+        tags
+        languages
         date
         repoLink
-        team
         title
       }
     }

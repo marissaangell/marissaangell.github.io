@@ -4,15 +4,15 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 import icon from '../assets/whiteWoman4.png'
 
 
 const navigation = [
-  { name: 'About Me', href: '/about', current: false },
-  { name: 'Projects', href: '/projects', current: false },
-  { name: 'Contact', href: '/contact', current: false }
+  { name: 'About Me', href: '/about'    },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Contact',  href: '/contact'  }
 ]
 
 function classNames(...classes) {
@@ -57,10 +57,10 @@ const Navbar = ({ current }) => {
                         key={item.name}
                         to={item.href}
                         className={classNames(
-                          current == item.href ? 'bg-gray-600 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          current === item.href ? 'bg-gray-600 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
-                        aria-current={current == item.href ? 'page' : undefined}
+                        aria-current={current === item.href ? 'page' : undefined}
                       >
                         {item.name}
                       </Link>
@@ -84,10 +84,10 @@ const Navbar = ({ current }) => {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    current == item.href ? 'bg-gray-600 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    current === item.href ? 'bg-gray-600 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
-                  aria-current={current == item.href ? 'page' : undefined}
+                  aria-current={current === item.href ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>

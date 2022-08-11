@@ -5,13 +5,14 @@ import { Link } from 'gatsby'
 
 const languageGradients = {
 	'C#': 'from-red-400 to-red-600',
-	'Kotlin': 'from-green-400 to-green-600' 
+	'Kotlin': 'from-green-400 to-green-600'
 }
+const defaultGradient = 'from-gray-400 to-gray-500'
 
 
 const GradientCardFull = ({ details, slug }) => {
 
-	const gradientColor = languageGradients[details.mainLanguage]
+	const gradientColor = details.languages[0] in languageGradients ? languageGradients[details.languages[0]] : defaultGradient
 
   return (
     <article className={"p-1 shadow-xl rounded-2xl bg-gradient-to-r " + gradientColor}>
