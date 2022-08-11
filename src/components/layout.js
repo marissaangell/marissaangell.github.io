@@ -5,7 +5,7 @@ import Navbar from './navbar'
 import Footer from './footer'
 
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, navCurrent, children }) => {
   
   const data = useStaticQuery(graphql`
     query {
@@ -21,7 +21,7 @@ const Layout = ({ pageTitle, children }) => {
     <div className="flex flex-col h-screen">
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
 
-      <Navbar className="fixed" />
+      <Navbar className="fixed" current={navCurrent} />
 
       <main className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-24 pb-12 grow shrink-0">
         {children}
