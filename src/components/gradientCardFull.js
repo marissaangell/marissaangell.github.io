@@ -3,17 +3,25 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
+const languageGradients = {
+	'C#': 'from-red-400 to-red-600',
+	'Kotlin': 'from-green-400 to-green-600' 
+}
+
 
 const GradientCardFull = ({ details, slug }) => {
+
+	const gradientColor = languageGradients[details.mainLanguage]
+
   return (
-    <article className="p-1 shadow-xl rounded-2xl bg-gradient-to-r from-red-400 to-red-600">
+    <article className={"p-1 shadow-xl rounded-2xl bg-gradient-to-r " + gradientColor}>
 		  <div className="flex flex-col justify-end h-full p-6 bg-neutral sm:p-6 rounded-xl">
 		    
 		    <div className="">
-		      <p className="text-xs font-medium text-gray-500">
+		      <p className="text-xs font-medium text-gray-500 mb-2">
 		        {details.date}
 		      </p>
-		      <h5 className="mt-2 text-xl font-bold text-white link link-hover">
+		      <h5 className="text-xl font-bold text-white link link-hover">
 		      	<Link to={`/projects/${slug}`}>
 		        	{details.title}
 	        	</Link>
@@ -23,21 +31,22 @@ const GradientCardFull = ({ details, slug }) => {
 		          {details.description}
 		        </p>
 		      </div>
+	      </div>
 
-		      <div className="flex items-center justify-between mt-4">
-		        <p className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-500">
-		          Rails
-		        </p>
-		        <ul className="flex space-x-1">
-		        	{ details.tags.map((tag) => (
-								<li key={tag} className="inline-block rounded-full text-white text-xs font-medium px-3 py-1.5 bg-neutral-focus">
-			            {tag}
-			          </li>
-			        )) }
-		        </ul>
-		      </div>
+	      <div className="flex items-center justify-between mt-4">
+	        <p className={"text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r " + gradientColor}>
+	          {details.languages[0]}
+	        </p>
+	        <ul className="flex space-x-1">
+	        	{ details.tags.map((tag) => (
+							<li key={tag} className="inline-block rounded-full text-white text-xs font-medium px-3 py-1.5 bg-gray-700">
+		            {tag}
+		          </li>
+		        )) }
+	        </ul>
+	      </div>
 
-		    </div>
+		    
 		  </div>
 		</article>
 

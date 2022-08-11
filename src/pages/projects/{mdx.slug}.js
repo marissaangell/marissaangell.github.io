@@ -26,7 +26,7 @@ export const query = graphql`
       frontmatter {
         class
         date
-        repo_link
+        repoLink
         team
         title
       }
