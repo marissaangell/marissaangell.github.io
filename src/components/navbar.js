@@ -1,4 +1,4 @@
-//Source: https://tailwindui.com/components/application-ui/navigation/navbars
+//Adapted from: https://tailwindui.com/components/application-ui/navigation/navbars
 
 import * as React from 'react'
 import { Link } from 'gatsby'
@@ -12,14 +12,14 @@ import icon from '../assets/whiteWoman4.png'
 const navigation = [
   { name: 'About Me', href: '/about', current: false },
   { name: 'Projects', href: '/projects', current: false },
+  { name: 'Contact', href: '/contact', current: false }
 ]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-
-export default function Navbar() {
+const Navbar = ({ current }) => {
   return (
     <Disclosure as="nav" className="fixed w-full bg-neutral" style={{zIndex: 99}}>
       {({ open }) => (
@@ -57,10 +57,10 @@ export default function Navbar() {
                         key={item.name}
                         to={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          current == item.href ? 'bg-gray-600 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={current == item.href ? 'page' : undefined}
                       >
                         {item.name}
                       </Link>
@@ -84,10 +84,10 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    current == item.href ? 'bg-gray-600 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={current == item.href ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -100,3 +100,5 @@ export default function Navbar() {
     </Disclosure>
   )
 }
+
+export default Navbar
