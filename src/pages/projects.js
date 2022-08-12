@@ -13,25 +13,26 @@ const ProjectsPage = ({ data }) => {
 			<Heading text={pageTitle} />
 			<div>
         <div className="divider" />
-				<CardGrid cards={data.allMdx.nodes}/>
+				<CardGrid cards={data.allFile.nodes}/>
 			</div>
 		</Layout>
 	)
 }
 
 export const query = graphql`
-  query {
-    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+  query AllProjectQuery {
+    allFile(filter: {sourceInstanceName: {eq: "projects"}}, sort: {fields: childrenMdx___frontmatter___date, order: DESC}) {
       nodes {
-        frontmatter {
-          date
-          title
-          description
-          tags
-          languages
+        sourceInstanceName
+        childMdx {
+          frontmatter {
+            date(formatString: "YYYY")
+            title
+            tags
+            description
+            languages
+          }
         }
-        id
-        slug
       }
     }
   }
