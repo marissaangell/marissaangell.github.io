@@ -23,7 +23,7 @@ const Layout = ({ pageTitle, navCurrent, children }) => {
 
       <Navbar className="fixed" current={navCurrent} />
 
-      <main className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-24 pb-12 grow shrink-0">
+      <main className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-20 pb-12 grow shrink-0">
         {children}
       </main>
 

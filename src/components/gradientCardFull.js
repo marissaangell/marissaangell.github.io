@@ -15,8 +15,8 @@ const GradientCardFull = ({ details, slug }) => {
 	const gradientColor = details.languages[0] in languageGradients ? languageGradients[details.languages[0]] : defaultGradient
 
   return (
-    <article className={"p-1 shadow-xl rounded-2xl bg-gradient-to-r " + gradientColor}>
-		  <div className="flex flex-col justify-end h-full p-6 bg-neutral sm:p-6 rounded-xl">
+    <article className={"p-1 h-full self-stretch shadow-xl rounded-2xl bg-gradient-to-r " + gradientColor}>
+		  <div className="flex flex-col justify-between h-full p-4 bg-neutral sm:p-5 rounded-xl">
 		    
 		    <div className="">
 		      <p className="text-xs font-medium text-gray-500 mb-2">
@@ -34,7 +34,7 @@ const GradientCardFull = ({ details, slug }) => {
 		      </div>
 	      </div>
 
-	      <div className="flex items-center justify-between mt-4">
+	      <div className="flex items-center align-self-end justify-between mt-4">
 	        <p className={"text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r " + gradientColor}>
 	          {details.languages[0]}
 	        </p>
