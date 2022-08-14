@@ -3,7 +3,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 import icon from '../assets/whiteWoman4.png'

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { graphql, Link } from 'gatsby'
-import { SparklesIcon, StarIcon } from '@heroicons/react/outline'
+import { SparklesIcon } from '@heroicons/react/outline'
 
 import Layout from '../components/layout'
 import CardGrid from '../components/cardGrid'
