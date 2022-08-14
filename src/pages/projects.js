@@ -13,6 +13,7 @@ const ProjectsPage = ({ data }) => {
 			<Heading text={pageTitle} />
 			<div>
         <div className="divider" />
+				<CardGrid cards={data.allFile.nodes} useGradient={true} />
 			</div>
 		</Layout>
 	)
