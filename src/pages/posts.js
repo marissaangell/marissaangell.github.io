@@ -11,7 +11,7 @@ const PostsPage = ({ data }) => {
 		<Layout pageTitle={pageTitle} navCurrent="/posts">
 			<Heading text={pageTitle} />
 			<div>
-        <ul>
+        <ul className="pl-6 list-disc">
           {data.allFile.nodes.map((entry) => (
             <li key={entry.childMdx.id}>
               [{entry.childMdx.frontmatter.date}] {entry.childMdx.frontmatter.title}
