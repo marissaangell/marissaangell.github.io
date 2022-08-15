@@ -86,6 +86,7 @@ export const query = graphql`
 	  ) {
 	    group(field: sourceInstanceName, limit: 6) {
 	      nodes {
+	      	name
 	        sourceInstanceName
 	        childMdx {
         	  id
@@ -95,6 +96,11 @@ export const query = graphql`
 	            tags
 	            description
 	            languages
+	            externalLinks {
+	              desc
+	              icon
+	              url
+	            }
 	          }
 	        }
 	      }

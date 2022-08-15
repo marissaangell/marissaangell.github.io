@@ -3,17 +3,30 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
-const languageGradients = {
-	'C#': 'from-red-400 to-red-600',
-	'Kotlin': 'from-green-400 to-green-600',
-	'Python': 'from-yellow-400 to-yellow-600'
+import { MarkGithubIcon, LinkExternalIcon } from '@primer/octicons-react'
+
+function getGradientColor(language){
+	switch(language){
+		case 'C#': 		 	return 'from-red-400 to-red-600'
+		case 'Kotlin': 	return 'from-green-400 to-green-600'
+		case 'Python': 	return 'from-yellow-400 to-yellow-600'
+		default: 			 	return 'from-gray-400 to-gray-500'
+	}
 }
-const defaultGradient = 'from-gray-400 to-gray-500'
+
+function getExtLinkIcon(linkTo){
+	switch(linkTo){
+		case 'Github': 	return <MarkGithubIcon size={16}/>
+		default: 			 	return <LinkExternalIcon size={16}/>
+	}
+}
 
 
 const GradientCard = ({ details, url, useGradient }) => {
 
-	const gradientColor = (useGradient && details.languages[0] in languageGradients) ? languageGradients[details.languages[0]] : defaultGradient
+	const gradientColor = (useGradient) 
+												? getGradientColor(details.languages[0])
+												: getGradientColor()
 
   return (
     <article className={"p-1 h-full self-stretch shadow-xl rounded-2xl bg-gradient-to-r " + gradientColor}>
@@ -26,12 +39,12 @@ const GradientCard = ({ details, url, useGradient }) => {
 		      <div className="text-xs flex flex-row gap-2">
 			      { details.externalLinks
 			      	? details.externalLinks.map((link) => (
-									<a id={link.url} href={link.url} className="link link-hover">
-										{link.desc}
+									<a id={link.url} href={link.url} className="hover:text-gray-200">
+										{getExtLinkIcon(link.icon)}										
 									</a>
 		        		))
-	        		: <></> }
-
+	        		: <></> 
+        		}
 		      </div>
 	      </div>
 
