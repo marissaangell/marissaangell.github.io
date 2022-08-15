@@ -32,6 +32,11 @@ export const query = graphql`
             tags
             description
             languages
+            externalLinks {
+              desc
+              icon
+              url
+            }
           }
         }
       }

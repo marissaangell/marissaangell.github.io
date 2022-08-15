@@ -23,8 +23,15 @@ const GradientCard = ({ details, url, useGradient }) => {
 		      <p className="text-xs font-medium text-gray-500 mb-2">
 		        {details.date}
 		      </p>
-		      <div className="flex flex-row">
-			      
+		      <div className="text-xs flex flex-row gap-2">
+			      { details.externalLinks
+			      	? details.externalLinks.map((link) => (
+									<a id={link.url} href={link.url} className="link link-hover">
+										{link.desc}
+									</a>
+		        		))
+	        		: <></> }
+
 		      </div>
 	      </div>
 

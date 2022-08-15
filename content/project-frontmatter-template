@@ -2,9 +2,15 @@
 title: ""
 date: "YYYY-MM-DD"
 description: ""
+descriptionLong
 
-repoLink: ""
-demoLink: ""
+externalLinks:
+- url: "https://github.com/marissaangell/"
+  desc: "Source"
+  icon: "Github"
+- url: "https://github.com/marissaangell/"
+  desc: "Demo"
+  icon: "Ext"
 
 languages:
 - ""
@@ -13,3 +19,28 @@ tags:
 - ""
 
 ---
+export const vars = { title: "Project Title",
+					  summary: "A bit of text describing the project",
+					  descriptions: [
+							{ heading: 'Tools & Languages', body: 'C#, Unity' },
+							{ heading: 'Project Timeline', body: 'January 2022 - May 2022' },
+							{ heading: 'Project Type', body: 'Group Coursework (Game Dev)' },
+							{ heading: 'My Roles', body: 'Programming, VFX, UI, Narrative' },
+					  ],
+}
+
+<TwoColumn vars={vars}>
+
+</TwoColumn>
+
+
+<div className="divider py-4" />
+
+
+<div className="max-w-3xl mx-auto">
+<ProseWrapper>
+
+
+
+</ProseWrapper>
+</div>

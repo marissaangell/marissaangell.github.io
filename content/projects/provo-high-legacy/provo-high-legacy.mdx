@@ -1,0 +1,68 @@
+---
+title: "Provo High Legacy Site"
+date: "2018-05-31"
+description: "A photo showcase spanning 60 years made to commemorate the school's legacy."
+
+externalLinks:
+- url: "https://github.com/provohighlegacy/provohighlegacy.github.io"
+  desc: "Source"
+  icon: "Github"
+- url: "https://provohighlegacy.github.io/"
+  desc: "Demo"
+  icon: "Ext"
+
+languages:
+- "HTML"
+- "CSS"
+
+tags:
+- "web-app"
+
+---
+
+export const vars = { title: "Provo High Legacy Site",
+					  summary: "A photo showcase spanning 60 years made to commemorate the school's legacy. Made to be viewed on both mobile and desktop.",
+					  descriptions: [
+							{ heading: 'Tools & Languages', body: 'HTML, CSS, Bootstrap' },
+							{ heading: 'Project Timeline', body: 'March 2018 - May 2018' },
+							{ heading: 'Project Type', body: 'Extra Curricular / Volunteer' },
+							{ heading: 'My Roles', body: 'Web Developer, Photo Editor' },
+					  ],
+}
+import photo from './provo-high-legacy-photo-comparison.jpg';
+
+
+
+<TwoColumn vars={vars} centerRightCol="true">
+
+<img className="mt-10" src={photo} alt="On the left, a photo of students standing on a staircase from the year 1957. On the right, the photo re-created in the year 2018."/>
+
+<div className="flex justify-center gap-x-6 mt-6">
+
+<a href="https://github.com/provohighlegacy/provohighlegacy.github.io">
+<button className="btn btn-outline">
+Source Code
+</button>
+</a>
+
+<a href="https://provohighlegacy.github.io/">
+<button className="btn btn-outline">
+Demo Link
+</button>
+</a>
+
+</div>
+
+</TwoColumn>
+
+
+<div className="divider py-4" />
+
+
+<div className="max-w-3xl mx-auto">
+<ProseWrapper>
+
+
+
+</ProseWrapper>
+</div>

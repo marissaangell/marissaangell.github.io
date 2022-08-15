@@ -3,24 +3,31 @@ import { graphql, Link } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { MDXProvider } from "@mdx-js/react"
 
-import Layout from '../../components/layout'
-import Heading from '../../components/heading'
+import { ChevronLeftIcon } from '@heroicons/react/outline'
 
+import Layout from '../../components/layout'
+
+import Heading from '../../components/heading'
 import Carousel from '../../components/carousel'
 import TwoColumn from '../../components/twoColumn'
+import DescGrid from '../../components/descGrid'
+import ProseWrapper from '../../components/proseWrapper'
 
+const shortcodes = { Carousel, TwoColumn, DescGrid, Heading, ProseWrapper }
 
-const shortcodes = { Carousel, TwoColumn }
 
 const MdxPage = ({ data }) => {
    return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
 
-      <Link to={"/" + data.mdx.parent.sourceInstanceName}>Back</Link>
-      <Heading text={data.mdx.frontmatter.title}/>
-      <p>Posted: {data.mdx.frontmatter.date}</p>
+      {/*<Link to={"/" + data.mdx.parent.sourceInstanceName} >
+        <ChevronLeftIcon className="h-4 w-4 inline-block" aria-hidden="true" />
+        <p className="inline-block">Back</p>
+      </Link>*/}
+      {/*<Heading text={data.mdx.frontmatter.title}/>
+      <p>Posted: {data.mdx.frontmatter.date}</p>*/}
 
-      <div className="mt-20 prose lg:prose-lg max-w-none">
+      <div className="mt-6 text-gray-400">
         <MDXProvider components={shortcodes}>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </MDXProvider>
@@ -39,7 +46,6 @@ export const query = graphql`
         tags
         languages
         date
-        repoLink
         title
       }
       parent {
