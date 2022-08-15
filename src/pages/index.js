@@ -84,7 +84,7 @@ export const query = graphql`
 	    filter: {sourceInstanceName: {in: ["projects", "posts"]}}
 	    sort: {fields: childrenMdx___frontmatter___date, order: DESC}
 	  ) {
-	    group(field: sourceInstanceName, limit: 3) {
+	    group(field: sourceInstanceName, limit: 6) {
 	      nodes {
 	        sourceInstanceName
 	        childMdx {
