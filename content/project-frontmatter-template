@@ -2,7 +2,6 @@
 title: ""
 date: "YYYY-MM-DD"
 description: ""
-descriptionLong
 
 externalLinks:
 - url: "https://github.com/marissaangell/"
@@ -29,7 +28,7 @@ export const vars = { title: "Project Title",
 					  ],
 }
 
-<TwoColumn vars={vars}>
+<TwoColumn vars={vars} centerRightCol={false}>
 
 </TwoColumn>
 
