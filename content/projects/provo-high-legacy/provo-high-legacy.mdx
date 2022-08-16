@@ -29,29 +29,20 @@ export const vars = { title: "Provo High Legacy Site",
 							{ heading: 'My Roles', body: 'Web Developer, Photo Editor' },
 					  ],
 }
-import photo from './provo-high-legacy-photo-comparison.jpg';
+import PHSLegacyPhoto from './provo-high-legacy-photo-comparison.jpg';
 
 
 
 <TwoColumn vars={vars} centerRightCol="true">
 
-<img className="mt-10" src={photo} alt="On the left, a photo of students standing on a staircase from the year 1957. On the right, the photo re-created in the year 2018."/>
+<img className="mt-10" src={PHSLegacyPhoto} alt="On the left, a photo of students standing on a staircase from the year 1957. On the right, the photo re-created in the year 2018."/>
 
-<div className="flex justify-center gap-x-6 mt-6">
-
-<a href="https://github.com/provohighlegacy/provohighlegacy.github.io">
-<button className="btn btn-outline">
-Source Code
-</button>
-</a>
-
-<a href="https://provohighlegacy.github.io/">
-<button className="btn btn-outline">
-Demo Link
-</button>
-</a>
-
-</div>
+<LinkButtonRow 
+  links={[
+          {url: "https://github.com/provohighlegacy/provohighlegacy.github.io", text: "Source Code"},
+          {url: "https://provohighlegacy.github.io/", text: "Demo Link"}
+        ]} 
+/>
 
 </TwoColumn>
 
