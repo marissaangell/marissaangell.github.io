@@ -8,12 +8,13 @@ import { ChevronLeftIcon } from '@heroicons/react/outline'
 import Layout from '../../components/layout'
 
 import Heading from '../../components/heading'
-import Carousel from '../../components/carousel'
+import ImgCarousel from '../../components/carousel'
 import TwoColumn from '../../components/twoColumn'
 import DescGrid from '../../components/descGrid'
 import ProseWrapper from '../../components/proseWrapper'
+import LinkButtonRow from '../../components/linkButtonRow'
 
-const shortcodes = { Carousel, TwoColumn, DescGrid, Heading, ProseWrapper }
+const shortcodes = { ImgCarousel, TwoColumn, DescGrid, Heading, ProseWrapper, LinkButtonRow}
 
 
 const MdxPage = ({ data }) => {
