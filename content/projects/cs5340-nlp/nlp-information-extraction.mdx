@@ -7,6 +7,8 @@ externalLinks: []
 
 languages:
 - "Python"
+- "spaCy"
+- "Docker"
 
 tags:
 - "software"
@@ -14,5 +16,51 @@ tags:
 
 ---
 
+export const vars = { title: "NLP Information Extraction",
+            summary: "Using natural language processing to extract key information from articles.",
+            descriptions: [
+              { heading: 'Tools & Languages', body: 'Python, spaCy, Docker' },
+              { heading: 'Project Timeline', body: 'October 2021 - December 2021' },
+              { heading: 'Project Type', body: 'Group Coursework (Team of 2)' },
+              { heading: 'My Roles', body: 'Extraction Rules, Contanerization, Testing' },
+            ],
+}
 
-kfldlk
+import nlp1 from './nlp1.jpg'
+import nlp2 from './nlp2.jpg'
+import nlp3 from './nlp3.jpg'
+import nlp4 from './nlp4.jpg'
+import nlp5 from './nlp5.jpg'
+import nlp6 from './nlp6.jpg'
+
+
+<TwoColumn vars={vars} centerRightCol={true}>
+
+</TwoColumn>
+
+
+<div className="divider py-4" />
+
+
+<div className="max-w-3xl mx-auto">
+
+<ImgCarousel images={[
+	nlp1,
+	nlp2,
+	nlp3,
+	nlp4,
+	nlp5,
+	nlp6
+]} />
+
+<ProseWrapper>
+
+## Details
+
+I completed this project with a friend and fellow CS major, Brandon Walters - this was our final for the class 'Natural Language Processing' at the University of Utah. Our task was extracting key pieces of information from old business acquisition announcements (i.e. What company was purchased? For how much? By whom?).
+
+Grading for this project was somewhat unique: because the entire class was working to maximize accuracy and precision on the same data set, we were ranked against each other as a sort of class competition. In the end, the top 10 teams presented their program architecture and problem solving strategies for everyone to learn from - and Brandon and I ended up getting 6th overall! Some excerpts from our presentation are included in the slideshow above.
+
+</ProseWrapper>
+
+</div>
