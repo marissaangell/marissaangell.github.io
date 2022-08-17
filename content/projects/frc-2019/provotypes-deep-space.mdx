@@ -16,4 +16,40 @@ tags:
 
 ---
 
+export const vars = { title: "Provotypes 2019 FRC Robot",
+            summary: "Robot code for FIRST Robotics Competition's 'Deep Space' season.",
+            descriptions: [
+              { heading: 'Tools & Languages', body: 'Java' },
+              { heading: 'Project Timeline', body: 'January 2019 - April 2019' },
+              { heading: 'Project Type', body: 'Extra Curricular' },
+              { heading: 'My Roles', body: 'Team Captain, Lead Programmer, Robot Driver' },
+            ],
+}
 
+<TwoColumn vars={vars} centerRightCol={true}>
+
+<div class="w-full flex justify-center no-prose">
+<div class="aspect-video h-full w-full flex justify-center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/RSamz7Ok05E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+</TwoColumn>
+
+<div className="divider py-4" />
+
+
+<div className="max-w-3xl mx-auto">
+<LinkButtonRow 
+  links={[
+          {url: "https://github.com/provotypes/2019-Deep-Space", text: "Source Code"},
+          {url: "https://provotypes.org/2019-robot-2/", text: "Robot Specs"},
+          {url: "https://grabcad.com/library/frc-6844-2019-robot-moonshot-1", text: "Robot CAD Files"},
+          {url: "https://www.thebluealliance.com/team/6844/2019", text: "2019 Match History"}
+        ]} 
+/>
+<ProseWrapper>
+
+
+</ProseWrapper>
+</div>
