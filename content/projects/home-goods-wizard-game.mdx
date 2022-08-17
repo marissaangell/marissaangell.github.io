@@ -18,14 +18,28 @@ tags:
 
 ---
 
-# Testing
+export const vars = { title: "Home Goods Wizard",
+            summary: "A first-person puzzle game about cultivating furniture via magic rituals! Made for the Cultivation Jam.",
+            descriptions: [
+              { heading: 'Tools & Languages', body: 'C#, Unity' },
+              { heading: 'Project Timeline', body: 'June 20th 2022 - June 26th 2022' },
+              { heading: 'Project Type', body: 'Personal Project (Game Jam)' },
+              { heading: 'Game Jam Theme', body: 'Cultivation & Household Goods' },
+            ],
+}
 
-### H3 Title
+<TwoColumn vars={vars} centerRightCol={true}>
 
-#### H4 Title
+<div className="mt-10 flex justify-center">
 
-##### H5 Title
+<iframe src="https://itch.io/embed/1591804?linkback=true&amp;bg_color=624F41&amp;fg_color=fbf2e9&amp;link_color=F4D5B8&amp;border_color=F4D5B8" width="552" height="167" frameborder="0"><a href="https://marissaangell.itch.io/home-goods-wizard">Home Goods Wizard by Marissa Angell</a></iframe>
+</div> 
 
-Some plain text...
+<LinkButtonRow 
+  links={[
+          {url: "https://github.com/marissaangell/HomeGoodsWizard", text: "Source Code"},
+          {url: "https://itch.io/jam/cultivation", text: "Game Jam Page"},
+        ]} 
+/>
 
-Home goods wizard~~
+</TwoColumn>
