@@ -4,7 +4,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 
 
-const GradientCard = ({ details, slug }) => {
+const GradientCardTwo = ({ details, slug }) => {
   return (
     <div className="relative block p-6 overflow-hidden border border-gray-100 rounded-lg bg-neutral">
       <span className="absolute inset-x-0 bottom-0 h-2  bg-gradient-to-r from-green-300 via-blue-500 to-purple-600" />
@@ -53,4 +53,4 @@ const GradientCard = ({ details, slug }) => {
   )
 }
 
-export default GradientCard
+export default GradientCardTwo

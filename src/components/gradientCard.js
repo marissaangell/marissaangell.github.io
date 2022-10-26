@@ -13,7 +13,6 @@ function getGradientColor(language){
 		case 'Vue': 		return 'from-green-400 to-green-600'
 		case 'Python': 	return 'from-yellow-400 to-yellow-600'
 		case 'Unreal Engine': 		return 'from-blue-400 to-blue-600'
-		case 'Unreal Blueprint': 	return 'from-blue-400 to-blue-600'
 		case 'Java': 		 	return 'from-orange-400 to-orange-600'
 		case 'Kotlin': 		 	return 'from-orange-400 to-orange-600'
 		case 'C#': 		 	return 'from-pink-500 to-pink-700'
