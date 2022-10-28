@@ -26,10 +26,13 @@ tags:
 export const vars = { title: "marissaangell.github.io",
             summary: "The source code for this site! Made using the Gatsby JS framework.",
             descriptions: [
-              { heading: 'Tools & Languages', body: 'Gatsby, React, GraphQL' },
-              { heading: 'Project Timeline', body: 'August 2022' },
+              { heading: 'Tools & Languages', body: 'Gatsby, React, GraphQL, Tailwind CSS' },
+              { heading: 'Project Timeline', body: 'August 2022 - Present' },
             ],
 }
+
+import img1 from './media/TaniaRascia-ProjectsPage.jpg'
+
 
 <TwoColumn vars={vars} centerRightCol={true}>
 
@@ -47,6 +50,35 @@ export const vars = { title: "marissaangell.github.io",
 />
 <ProseWrapper>
 
+## Background
+
+I actually got my start in programming through self-studying web development (HTML, CSS, and vanilla JavaScript) from Codecademy all the way back in 2012. My first project was the simplest portfolio website you'd ever seen, but it made me fall in love with code and decide to become a software engineer - so it'll always hold a special place in my heart.
+
+Once I started my CS degree, however, I was sucked into the realm of back-end and had little time to practice front-end work. Fast forward three years to Summer 2022, and having just finished my junior year I was ready to remedy that. So, I decided to make this site as a foray into modern web development! 
+
+## Inspiration
+
+Before beginning development of this site, I looked at a lot of developer websites and portfolios to try and get an idea of how I wanted to approach the site's design. Out of everything I looked at, my favorite was [Tania Rascia's site](https://www.taniarascia.com/) (in particular, the layout she calls [redesign version 6.0](https://www.taniarascia.com/redesign-version-6/)) - it was nice to look at, simple to navigate, and organized really well. I especially loved how she organized her side projects, tutorials, and blog posts; it's clear that she wanted to emphasize usability, and that's something I wanted to try and emulate.
 
 </ProseWrapper>
+
+<img src={img1} className="mt-6" />
+<p className="max-w-lg mx-auto mb-12"><i>Tania's projects page. All the info you need in a clear & concise package!</i></p>
+<div className="mt-10" />
+
+<ProseWrapper>
+
+## Technologies
+
+Before starting this site, I of course had big decisions to make; namely, what tools to use for the job? I was not caught up on the state of modern web development - my last big front-end projects were a Ruby-on-Rails blog site and a barebones React app, both made around 2016 - so I had my work cut out for me in the beginning to get up-to-speed with the languages and frameworks that had come out since then. 
+
+After several hours of research, I ended up deciding on the following:
+- `Gatsby`
+- `GraphQL`
+- `Tailwind CSS`
+  - I never thought I would end up falling in love with semantic CSS, but Tailwind changed that. Being able to tweak the React, HTML and CSS all from the same file was a game changer, especially when trying to iterate on designs quickly.
+  - Plus, Tailwind has a small ecosystem of its own - I was able to take advantage of the fantastic open-source component library [`daisyUI`](https://daisyui.com/), which was great in helping me get more comfortable with making my own components. 
+
+</ProseWrapper>
+
 </div>
