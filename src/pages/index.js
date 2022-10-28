@@ -6,9 +6,6 @@ import Layout from '../components/layout'
 import CardGrid from '../components/cardGrid'
 
 import UndrawProgrammer from './../assets/undraw_programmer.svg'
-// import UndrawProudCoder from './../assets/undraw_proud_coder.svg'
-// import UndrawStudying from './../assets/undraw_studying.svg'
-
 
 const IndexPage = ({ data }) => {
 	return (
@@ -28,12 +25,6 @@ const IndexPage = ({ data }) => {
 				    <div className="shadow-2xl rounded-full mx-20">
 				  		<img src={UndrawProgrammer} height="300" width="300" className="max-w-3xl "/>
 				  	</div>
-				  	
-					{/*<div className="bg-gray-600 p-6 rounded-xl shadow-2xl">
-						<img src={UndrawProudCoder} height="400" width="400" className="max-w-3xl"/>
-					</div>*/}
-
-					{/*<img src={UndrawStudying} height="300" width="300" className="max-w-3xl bg-base-100"/>*/}
 
 				  </div>
 				</div>

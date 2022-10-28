@@ -26,8 +26,8 @@ export default function AboutPage(){
       <div className={"max-w-2xl mx-auto grid grid-cols-1 gap-x-8 lg:max-w-7xl lg:grid-cols-3 items-start"}>
 
           {/* Right Column */}
-		      <div className="peer empty:hidden">
-		      	<div className="shadow-2xl rounded-lg bg-base-300 p-4 lg:-mt-12">
+		      <div className="peer empty:hidden max-w-xs mx-auto mt-6 lg:-mt-12 lg:max-w-7xl">
+		      	<div className="shadow-2xl rounded-lg bg-base-300 p-4">
 					    <StaticImage 
 				    		src="../assets/NCWITPic.jpg" 
 				    		alt="A photo of Marissa Angell" 

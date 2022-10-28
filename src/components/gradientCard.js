@@ -45,7 +45,7 @@ const GradientCard = ({ details, url, useGradient }) => {
 		      <div className="text-xs flex flex-row gap-2">
 			      { details.externalLinks
 			      	? details.externalLinks.map((link) => (
-									<a id={link.url} href={link.url} className="hover:text-gray-200">
+									<a id={link.url} href={link.url} key={link.url} className="hover:text-gray-200">
 										{getExtLinkIcon(link.icon)}										
 									</a>
 		        		))
