@@ -41,6 +41,9 @@ module.exports = {
 				"path": "./content/posts/"
 			},
 			__key: "posts"
+		},
+		{
+			resolve: 'gatsby-plugin-mdx-frontmatter'
 		}
 	]
 };

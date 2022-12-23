@@ -28,6 +28,7 @@
     "gatsby-cli": "^4.20.0",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-mdx": "^3.20.0",
+    "gatsby-plugin-mdx-frontmatter": "^0.0.4",
     "gatsby-plugin-react-helmet": "^5.20.0",
     "gatsby-plugin-sharp": "^4.20.0",
     "gatsby-source-filesystem": "^4.20.0",
