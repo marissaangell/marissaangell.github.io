@@ -2,6 +2,7 @@
 title: "Visual Narrative: 'Perplexity'"
 date: "2019"
 description: "A perplexing interactive narrative experience created for a New Media writing class."
+longDescription: "An interactive narrative experience created for a New Media writing class. The assignment was to craft a narrative that evoked the feeling of 'Perplexity' without using any text or narration."
 
 externalLinks:
 - url: "https://github.com/marissaangell/Visual-Narrative"
@@ -9,6 +10,14 @@ externalLinks:
   icon: "Github"
 - url: "https://marissaangell.github.io/Visual-Narrative/"
   desc: "Demo"
+  icon: "Ext"
+
+featuredLinks:
+- url: "https://github.com/marissaangell/Visual-Narrative"
+  text: "Source Code"
+  icon: "Github"
+- url: "https://marissaangell.github.io/Visual-Narrative/"
+  text: "Demo Link"
   icon: "Ext"
 
 languages:
@@ -23,37 +32,22 @@ tags:
 - "web-app"
 - "media"
 
+factoids: 
+- heading: 'Tools & Languages'
+  body: 'JavaScript, JQuery, Bootstrap, Photoshop'
+- heading: "Project Timeline"
+  body: 'September 2019 - October 2019'
+- heading: 'Project Type'
+  body: 'Group Coursework | Team of 4'
+- heading: 'My Roles'
+  body: 'Web Dev, Narrative, Image Editing'
+
 ---
 
-export const vars = { title: "Visual Narrative: 'Perplexity'",
-            summary: "An interactive narrative experience created for a New Media writing class. The assignment was to craft a narrative that evoked the feeling of 'Perplexity' without using any text or narration.",
-            descriptions: [
-              { heading: 'Tools & Languages', body: 'JavaScript, JQuery, Bootstrap, Photoshop' },
-              { heading: 'Project Timeline', body: 'September 2019 - October 2019' },
-              { heading: 'Project Type', body: 'Group Coursework (New Media)' },
-              { heading: 'My Roles', body: 'Web Dev, Narrative, Image Editing' },
-            ],
-}
 import visualNarrativePhoto from './media/visual-narrative.jpg';
-
-<TwoColumn vars={vars} centerRightCol={true}>
 
 <img className="mt-10" src={visualNarrativePhoto} alt=""/>
 
-<LinkButtonRow 
-  links={[
-          {url: "https://github.com/marissaangell/Visual-Narrative", text: "Source Code"},
-          {url: "https://marissaangell.github.io/Visual-Narrative/", text: "Demo Link"}
-        ]} 
-/>
-
-</TwoColumn>
-
-
-<div className="divider py-4" />
-
-
-<div className="max-w-3xl mx-auto">
 <ProseWrapper>
 
 ## Details
@@ -68,4 +62,3 @@ The class 'Writing for New Media' at the University of Utah was one of my favori
 For this assignment, I worked in a team with three other people. In our group, we had one programmer (myself), one photographer, one digital artist, and one musician. With such a diverse set of artistic talent, as a team we decided to tackle this assignment in a way that would allow all of us to combine our areas of expertise - and this project was the result.
 
 </ProseWrapper>
-</div>

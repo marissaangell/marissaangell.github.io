@@ -129,6 +129,7 @@ export const query = graphql`
         date
         title
         description
+        longDescription
         factoids {
           heading
           body

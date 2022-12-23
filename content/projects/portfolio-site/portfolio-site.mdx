@@ -21,33 +21,24 @@ languages:
 tags:
 - "web-app"
 
+factoids: 
+- heading: 'Tools & Languages'
+  body: 'Gatsby, React, GraphQL, Tailwind CSS'
+- heading: "Project Timeline"
+  body: "August 2022 - Present"
+
+featuredLinks:
+- url: "https://github.com/marissaangell/marissaangell.github.io"
+  text: "Source Code"
+  icon: "Github"
+
+
 ---
 
-export const vars = { title: "marissaangell.github.io",
-            summary: "The source code for this site! Made using the Gatsby JS framework.",
-            descriptions: [
-              { heading: 'Tools & Languages', body: 'Gatsby, React, GraphQL, Tailwind CSS' },
-              { heading: 'Project Timeline', body: 'August 2022 - Present' },
-            ],
-}
 
 import img1 from './media/TaniaRascia-ProjectsPage.jpg'
 
 
-<TwoColumn vars={vars} centerRightCol={true}>
-
-</TwoColumn>
-
-
-<div className="divider py-4" />
-
-
-<div className="max-w-3xl mx-auto">
-<LinkButtonRow 
-  links={[
-          {url: "https://github.com/marissaangell/marissaangell.github.io", text: "Source Code"},
-        ]} 
-/>
 <ProseWrapper>
 
 ## Background
@@ -80,5 +71,3 @@ After several hours of research, I ended up deciding on the following:
   - Plus, Tailwind has a small ecosystem of its own - I was able to take advantage of the fantastic open-source component library [`daisyUI`](https://daisyui.com/), which was great in helping me get more comfortable with making my own components. 
 
 </ProseWrapper>
-
-</div>

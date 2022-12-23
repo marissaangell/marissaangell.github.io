@@ -2,6 +2,7 @@
 title: "Interactive Historical Fiction"
 date: "2019"
 description: "An interactive historical fiction story about the Chernobyl disaster."
+longDescription: "An interactive historical fiction story about the Chernobyl disaster, created for a New Media writing class."
 
 externalLinks:
 - url: "https://github.com/marissaangell/Historical-Fiction"
@@ -9,6 +10,14 @@ externalLinks:
   icon: "Github"
 - url: "https://marissaangell.github.io/Historical-Fiction/"
   desc: "Demo"
+  icon: "Ext"
+
+featuredLinks:
+- url: "https://github.com/marissaangell/Historical-Fiction"
+  text: "Source Code"
+  icon: "Github"
+- url: "https://marissaangell.github.io/Historical-Fiction/"
+  text: "Demo Link"
   icon: "Ext"
 
 languages:
@@ -21,48 +30,25 @@ tags:
 - "web-app"
 - "media"
 
+factoids: 
+- heading: 'Tools & Languages'
+  body: 'JavaScript, Bootstrap'
+- heading: "Project Timeline"
+  body: 'November 2019 - December 2019'
+- heading: 'Project Type'
+  body: 'Individual Coursework'
+- heading: 'My Roles'
+  body: 'Web Dev, Narrative, Image Editing'
+
 ---
 
-export const vars = { title: "Interactive Historical Fiction",
-            summary: "An interactive historical fiction story about the Chernobyl disaster, created for a New Media writing class.",
-            descriptions: [
-              { heading: 'Tools & Languages', body: 'JavaScript, Bootstrap' },
-              { heading: 'Project Timeline', body: 'November 2019 - December 2019' },
-              { heading: 'Project Type', body: 'Individual Coursework' },
-              { heading: 'Work Done', body: 'Web Dev, Narrative, Image Editing' },
-            ],
-}
 import histFictImg1 from './media/historical-fiction.jpg';
 import histFictImg2 from './media/historical-fiction-2.jpg';
 
-
-<TwoColumn vars={vars} centerRightCol={true}>
-
 <ImgCarousel images={[histFictImg1, histFictImg2]} />
 
-<LinkButtonRow 
-  links={[
-          {url: "https://github.com/marissaangell/Historical-Fiction", text: "Source Code"},
-          {url: "https://marissaangell.github.io/Historical-Fiction/", text: "Demo Link"}
-        ]} 
-/>
 
-
-</TwoColumn>
-
-
-<div className="divider py-4" />
-
-
-<div className="max-w-3xl mx-auto">
 <ProseWrapper>
 
 
-
-
-
 </ProseWrapper>
-
-
-</div>
-

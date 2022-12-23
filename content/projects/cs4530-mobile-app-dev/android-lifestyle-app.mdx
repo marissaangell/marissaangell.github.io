@@ -3,7 +3,6 @@ title: "Lifestyle App"
 date: "2022"
 description: "An Android app for tracking health and planning outdoor activities."
 
-externalLinks: []
 
 languages:
 - "Kotlin"
@@ -13,19 +12,17 @@ tags:
 - "android"
 - "mobile-app"
 
+factoids: 
+- heading: 'Tools & Languages'
+  body: 'Kotlin, Java, SQLite, Android Studio'
+- heading: "Project Timeline"
+  body: 'January 2022 - May 2022'
+- heading: 'Project Type'
+  body: 'Group Coursework | Team of 4'
+- heading: 'My Roles'
+  body: 'Code Architecture, UI Implementation, Unit Testing'
+
 ---
-
-export const vars = { 
-  title: "Lifestyle App",
-  summary: "An Android app for tracking health and planning outdoor activities.",
-  descriptions: [
-    { heading: 'Tools & Languages', body: 'Kotlin, Java, SQLite, Android Studio' },
-    { heading: 'Project Timeline', body: 'January 2022 - May 2022' },
-    { heading: 'Project Type', body: 'Group Coursework | Team of 4' },
-    { heading: 'My Roles', body: 'Code Architecture, UI Implementation, Unit Testing' },
-  ],
-}
-
 
 import app1 from './media/app1.jpg'
 import app2 from './media/app2.jpg'
@@ -35,9 +32,6 @@ import app5 from './media/app5.jpg'
 import app6 from './media/app6.jpg'
 import app7 from './media/app7.jpg'
 import app8 from './media/app8.jpg'
-
-
-<TwoColumn vars={vars} centerRightCol={true}>
 
 <ImgCarousel images={[
   app1,
@@ -50,12 +44,6 @@ import app8 from './media/app8.jpg'
   app8
 ]} />
 
-</TwoColumn>
-
-
-
-<div className="max-w-3xl mx-auto">
-
 <ProseWrapper>
 
 ## Details
@@ -64,4 +52,3 @@ I made this app with three other students as a semester-long final project for t
 
 </ProseWrapper>
 
-</div>
