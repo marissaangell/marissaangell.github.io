@@ -20,6 +20,9 @@ const IndexPage = ({ data }) => {
 					      <p className="text-2xl py-6">I'm a software developer and game dev with experience in a wide range of technical areas.</p>
 					      <p className="text-2xl pb-6">From robotics to computer graphics, 3D modelling to machine learning - this site is a showcase of the things I've been up to!</p>
 				      </div>
+				      <Link to="/about" className="hover:bg-gray-700 hover:text-gray-300 px-4 py-2 rounded-md text-sm font-semibold border-2 border-current">
+								More About Me
+							</Link>
 				    </div>
 
 				    <div className="shadow-2xl rounded-full mx-20">

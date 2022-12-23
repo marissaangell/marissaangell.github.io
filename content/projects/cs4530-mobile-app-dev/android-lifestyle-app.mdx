@@ -15,14 +15,15 @@ tags:
 
 ---
 
-export const vars = { title: "Lifestyle App",
-            summary: "An Android app for tracking health and planning outdoor activities.",
-            descriptions: [
-              { heading: 'Tools & Languages', body: 'Kotlin, Java, SQLite, Android Studio' },
-              { heading: 'Project Timeline', body: 'January 2022 - May 2022' },
-              { heading: 'Project Type', body: 'Group Coursework | Team of 4' },
-              { heading: 'My Roles', body: 'Code Architecture, UI Implementation, Unit Testing' },
-            ],
+export const vars = { 
+  title: "Lifestyle App",
+  summary: "An Android app for tracking health and planning outdoor activities.",
+  descriptions: [
+    { heading: 'Tools & Languages', body: 'Kotlin, Java, SQLite, Android Studio' },
+    { heading: 'Project Timeline', body: 'January 2022 - May 2022' },
+    { heading: 'Project Type', body: 'Group Coursework | Team of 4' },
+    { heading: 'My Roles', body: 'Code Architecture, UI Implementation, Unit Testing' },
+  ],
 }
 
 
@@ -38,14 +39,6 @@ import app8 from './media/app8.jpg'
 
 <TwoColumn vars={vars} centerRightCol={true}>
 
-</TwoColumn>
-
-
-<div className="divider py-4" />
-
-
-<div className="max-w-3xl mx-auto">
-
 <ImgCarousel images={[
   app1,
   app2,
@@ -57,12 +50,18 @@ import app8 from './media/app8.jpg'
   app8
 ]} />
 
+</TwoColumn>
+
+
+
+<div className="max-w-3xl mx-auto">
+
 <ProseWrapper>
 
 ## Details
 
 I made this app with three other students as a semester-long final project for the course 'Mobile App Development' at the University of Utah. It was my first time making any sort of mobile app, as well as my first time working with Kotlin - and I ended up really enjoying it! 
-  
+
 </ProseWrapper>
 
 </div>
