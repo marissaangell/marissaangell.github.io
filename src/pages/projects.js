@@ -38,7 +38,7 @@ const ProjectsPage = ({ data }) => {
 
 export const query = graphql`
   query AllProjectQuery {
-    allFile(filter: {sourceInstanceName: {eq: "projects"}, extension: {eq: "mdx"}}, sort: {fields: childrenMdx___frontmatter___date, order: DESC}) {
+    allFile(filter: { extension: {eq: "mdx"}}, sort: {fields: childrenMdx___frontmatter___date, order: DESC}) {
       nodes {
         sourceInstanceName
         name

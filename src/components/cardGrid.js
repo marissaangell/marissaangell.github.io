@@ -1,13 +1,14 @@
 import * as React from "react"
 
 import GradientCard from './gradientCard'
-import GradientCardTwo from './gradientCardTwo'
+import GameCard from './gameCard'
 
 function getCard(cardInfo, useGradient){
 	switch(cardInfo.childMdx.frontmatter.category){
-		case 'games': return <GradientCardTwo 
+		case 'games': return <GameCard 
 														details={cardInfo.childMdx.frontmatter} 
-														slug='Test'
+														url={cardInfo.sourceInstanceName + "/" + cardInfo.name} 
+														useGradient={useGradient} 
 													/>
 		default:			return <GradientCard 
 														details={cardInfo.childMdx?.frontmatter} 

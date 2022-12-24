@@ -1,24 +1,12 @@
 import * as React from 'react'
 import { graphql, Link } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { MDXProvider } from "@mdx-js/react"
 
 import { ChevronLeftIcon } from '@heroicons/react/outline'
 
-import Layout from '../../components/layout'
+import Layout from 'layout'
+import ProjectPageDefault from 'projectPageDefault'
+import ProjectPageVFX from 'projectPageVFX'
 
-import Heading from '../../components/heading'
-import ImgCarousel from '../../components/carousel'
-import TwoColumn from '../../components/twoColumn'
-import DescGrid from '../../components/descGrid'
-import ProseWrapper from '../../components/proseWrapper'
-import LinkButtonRow from '../../components/linkButtonRow'
-import YoutubeEmbed from '../../components/youtubeEmbed'
-
-import ProjectPageDefault from '../../components/projectPageDefault'
-import ProjectPageVFX from '../../components/projectPageVFX'
-
-const shortcodes = { ImgCarousel, TwoColumn, DescGrid, Heading, ProseWrapper, LinkButtonRow, YoutubeEmbed}
 
 
 function getPageLayout(data){
@@ -32,10 +20,10 @@ const MdxPage = ({ data }) => {
    return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
 
-      <Link to={"/" + data.mdx.parent.sourceInstanceName} >
-        <ChevronLeftIcon className="h-4 w-4 inline-block" aria-hidden="true" />
+      {/*<Link to={"/" + data.mdx.parent.sourceInstanceName} className="hover:bg-gray-700 hover:text-gray-300 pr-4 pl-2 py-1 rounded-md text-sm md:text-md font-semibold border-2 border-current inline-block">
+        <ChevronLeftIcon className="h-4 w-4 -mt-1 inline-block" aria-hidden="true" />
         <p className="inline-block">Back</p>
-      </Link>
+      </Link>*/}
 
       {getPageLayout(data)}
       

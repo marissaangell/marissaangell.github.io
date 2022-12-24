@@ -3,16 +3,13 @@ import { graphql, Link } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { MDXProvider } from "@mdx-js/react"
 
-import { ChevronLeftIcon } from '@heroicons/react/outline'
-
-import Layout from './layout'
-import Heading from './heading'
-import ImgCarousel from './carousel'
-import TwoColumn from './twoColumn'
-import DescGrid from './descGrid'
-import ProseWrapper from './proseWrapper'
-import LinkButtonRow from './linkButtonRow'
-import YoutubeEmbed from './youtubeEmbed'
+import Heading from 'components/heading'
+import ImgCarousel from 'components/carousel'
+import TwoColumn from 'components/twoColumn'
+import DescGrid from 'components/descGrid'
+import ProseWrapper from 'components/proseWrapper'
+import LinkButtonRow from 'components/linkButtonRow'
+import YoutubeEmbed from 'components/youtubeEmbed'
 
 const shortcodes = { ImgCarousel, TwoColumn, DescGrid, Heading, ProseWrapper, LinkButtonRow, YoutubeEmbed}
 
