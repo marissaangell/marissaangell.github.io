@@ -29,18 +29,26 @@ module.exports = {
 		{
 		resolve: 'gatsby-source-filesystem',
 			options: {
-				"name": "projects",
-				"path": "./content/projects/"
+				"name": "coding",
+				"path": "./content/coding/"
 			},
-			__key: "projects"
+			__key: "coding"
 		},
 		{
 		resolve: 'gatsby-source-filesystem',
 			options: {
-				"name": "posts",
-				"path": "./content/posts/"
+				"name": "games",
+				"path": "./content/games/"
 			},
-			__key: "posts"
+			__key: "games"
+		},
+		{
+		resolve: 'gatsby-source-filesystem',
+			options: {
+				"name": "vfx",
+				"path": "./content/vfx/"
+			},
+			__key: "vfx"
 		},
 		{
 			resolve: 'gatsby-plugin-mdx-frontmatter'
