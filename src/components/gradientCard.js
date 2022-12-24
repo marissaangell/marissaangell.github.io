@@ -35,7 +35,7 @@ const GradientCard = ({ details, url, useGradient }) => {
 												: getGradientColor()
 
   return (
-    <article className={"p-1 h-full self-stretch shadow-xl rounded-2xl bg-gradient-to-r " + gradientColor}>
+    <article className={"p-1 h-full shadow-xl rounded-2xl bg-gradient-to-r " + gradientColor}>
 		  <div className="flex flex-col justify-between h-full p-4 bg-neutral sm:p-5 rounded-xl">
 		    
 		    <div className="flex flex-row justify-between w-full">
@@ -72,7 +72,7 @@ const GradientCard = ({ details, url, useGradient }) => {
 	        </p>
 	        <ul className="flex space-x-1">
 	        	{ details.tags.map((tag) => (
-							<li key={tag} className="inline-block rounded-full text-white text-xs font-medium px-3 py-1.5 bg-gray-700">
+							<li key={tag} className="inline-block rounded-full text-gray-100 text-xs font-normal px-2 py-1 bg-gray-700">
 		            {tag}
 		          </li>
 		        )) }

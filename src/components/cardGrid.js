@@ -5,11 +5,11 @@ import GradientCard from './gradientCard'
 const CardGrid = ({ cards, useGradient }) => {
 	return (
 	  <div>
-        <dl className="space-y-10 mt-6 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 md:gap-8 items-stretch">
+        <dl className="space-y-4 mt-4 md:mt-6 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 items-stretch">
 	        { cards.map((entry) => (
-	        	<div>
+	        	<div className="relative self-stretch h-full">
 	        		{ entry.childMdx 
-					? <div key={entry.childMdx.id} className="relative self-stretch">
+					? <div key={entry.childMdx.id} className="relative self-stretch h-full">
 						<GradientCard 
 							details={entry.childMdx.frontmatter} 
 							url={entry.name} 
