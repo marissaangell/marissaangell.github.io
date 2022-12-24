@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import { MarkGithubIcon, LogoGithubIcon, LinkExternalIcon } from '@primer/octicons-react'
+import { MarkGithubIcon, LinkExternalIcon } from '@primer/octicons-react'
 
 import icon from '../assets/whiteWoman4.png'
 
@@ -32,7 +32,7 @@ const Navbar = ({ current }) => {
     <Disclosure as="nav" className="fixed w-full bg-neutral" style={{zIndex: 99}}>
       {({ open }) => (
         <>
-          <div className="mx-auto px-2 md:px-6 lg:px-8 2xl:max-w-screen-xl">
+          <div className="mx-auto px-2 md:px-6 lg:px-8 xl:max-w-screen-xl">
             <div className="relative flex items-center justify-between h-16">
 
               <div className="absolute inset-y-0 left-0 flex items-center md:hidden">

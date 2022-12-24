@@ -13,106 +13,31 @@ import TwoColumn from '../../components/twoColumn'
 import DescGrid from '../../components/descGrid'
 import ProseWrapper from '../../components/proseWrapper'
 import LinkButtonRow from '../../components/linkButtonRow'
+import YoutubeEmbed from '../../components/youtubeEmbed'
 
-const shortcodes = { ImgCarousel, TwoColumn, DescGrid, Heading, ProseWrapper, LinkButtonRow}
+import ProjectPageDefault from '../../components/projectPageDefault'
+import ProjectPageVFX from '../../components/projectPageVFX'
 
+const shortcodes = { ImgCarousel, TwoColumn, DescGrid, Heading, ProseWrapper, LinkButtonRow, YoutubeEmbed}
+
+
+function getPageLayout(data){
+  switch(data.mdx.frontmatter.category){
+    case 'vfx': return <ProjectPageVFX mdx={data.mdx}/>
+    default:    return <ProjectPageDefault mdx={data.mdx}/>
+  }
+}
 
 const MdxPage = ({ data }) => {
    return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
 
-      {/*<Link to={"/" + data.mdx.parent.sourceInstanceName} >
+      <Link to={"/" + data.mdx.parent.sourceInstanceName} >
         <ChevronLeftIcon className="h-4 w-4 inline-block" aria-hidden="true" />
         <p className="inline-block">Back</p>
-      </Link>*/}
-      {/*<Heading text={data.mdx.frontmatter.title}/>
-      <p>Posted: {data.mdx.frontmatter.date}</p>*/}
+      </Link>
 
-      <div className="mt-6 text-gray-400">
-
-        {/* PROJECT HEADER */}
-        <div>
-          {/* Top 2-Column Section */}
-          <div className={"max-w-2xl mx-auto grid grid-cols-1 gap-x-8 lg:max-w-7xl lg:grid-cols-2 items-center"}>
-            
-            {/* Right Column (Media) */}
-            <div className="peer empty:hidden">
-              { data.mdx.frontmatter.projectMedia 
-                 ? <MDXRenderer>{data.mdx.frontmatter.projectMedia}</MDXRenderer>
-                 : null
-              }
-            </div>
-
-            {/* Left Column (Details) */}
-            <div className="col-start-1 row-start-1 peer-empty:col-span-full lg:peer-empty:px-36">
-              <ProseWrapper>
-                <div className="text-4xl font-bold text-gray-200">{data.mdx.frontmatter.title}</div>
-                
-                <p>
-                  { data.mdx.frontmatter.longDescription
-                    ? data.mdx.frontmatter.longDescription
-                    : data.mdx.frontmatter.description
-                  }
-                </p>
-
-                { data.mdx.frontmatter.factoids 
-                   ? <DescGrid descriptions={data.mdx.frontmatter.factoids}/>
-                   : <></>
-                }
-
-                <div className="divider lg:hidden" />
-              </ProseWrapper>
-            </div>
-          </div>
-
-          {/* ITCH.IO EMBED */}
-          { data.mdx.frontmatter.itchEmbed
-            ? <>
-                <div className="divider py-4" />
-                <div class="w-full flex justify-center no-prose">
-                  <MDXRenderer>{data.mdx.frontmatter.itchEmbed}</MDXRenderer>
-                </div>
-              </>
-            : <></> 
-          }
-
-          {/* LINK BUTTON ROW */}
-          { data.mdx.frontmatter.featuredLinks
-            ? <>
-                <div className="divider py-4" />
-                <LinkButtonRow links={data.mdx.frontmatter.featuredLinks} />
-              </>
-            : <></> 
-          }
-
-          <div className="divider py-4" />
-        </div>
-
-
-        {/* PROJECT PROSE */}
-        <div className="max-w-3xl mx-auto">
-          <MDXProvider components={shortcodes}>
-            <MDXRenderer>{data.mdx.body}</MDXRenderer>
-          </MDXProvider>
-        </div>
-
-
-      </div>
-
-      {/*{ data.mdx.frontmatter.factoids 
-         ? data.mdx.frontmatter.factoids.map((entry) => (
-            <div key={entry.heading} className="relative self-stretch">
-              {entry.heading}, {entry.body}
-            </div>
-          ))
-         : <></>
-      }
-
-
-      { data.mdx.frontmatter.projectMedia 
-         ? <MDXRenderer>{data.mdx.frontmatter.projectMedia}</MDXRenderer>
-         : <></>
-      }*/}
+      {getPageLayout(data)}
       
     </Layout>
   )
@@ -130,6 +55,7 @@ export const query = graphql`
         title
         description
         longDescription
+        category
         factoids {
           heading
           body

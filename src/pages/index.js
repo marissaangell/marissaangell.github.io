@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
 				    </div>
 
 				    <div className="shadow-2xl rounded-full mx-24 lg:mx-20">
-				  		<img src={UndrawProgrammer} height="300" width="300" className="lg:max-w-3xl"/>
+				  		<img src={UndrawProgrammer} height="300" width="300" className="lg:max-w-3xl" alt='Vector art of a woman sitting in front of a computer.'/>
 				  	</div>
 
 				  </div>
@@ -71,27 +71,6 @@ const IndexPage = ({ data }) => {
 					<CardGrid cards={data.allFile.group[2].nodes} />
 				</div>*/}
 
-				{/*<div>
-					<div className="w-full flex justify-between">
-						<h1 className="text-3xl font-bold text-gray-300 text-center md:text-left">Latest Posts</h1>
-						<Link to="/posts" className="hover:bg-gray-700 hover:text-gray-300 px-4 py-2 rounded-md text-sm font-semibold border-2 border-current">
-							All Posts
-						</Link>
-					</div>
-
-					<div>
-				        <ul className="pl-6 list-disc">
-				          {data.allFile.group[0].nodes.map((entry) => (
-				            <li key={entry.childMdx.id}>
-				              	<Link to={'/posts/' + entry.name} className="link link-hover">
-				              		[{entry.childMdx.frontmatter.date}] {entry.childMdx.frontmatter.title}
-			              		</Link>
-				            </li>
-				          ))}
-				        </ul>
-					</div>
-
-				</div>*/}
 			</div>
 		</Layout>
 	)
@@ -112,6 +91,7 @@ export const query = graphql`
 	          frontmatter {
 	            date(formatString: "YYYY")
 	            title
+	            category
 	            tags
 	            description
 	            languages

@@ -7,16 +7,16 @@ import { MarkGithubIcon, LinkExternalIcon } from '@primer/octicons-react'
 
 function getGradientColor(language){
 	switch(language){
-		case 'C++': 		 	return 'from-red-400 to-red-600'
-		case 'React': 	return 'from-green-400 to-green-600'
-		case 'JavaScript': 	return 'from-green-400 to-green-600'
-		case 'Vue': 		return 'from-green-400 to-green-600'
-		case 'Python': 	return 'from-yellow-400 to-yellow-600'
-		case 'Unreal Engine': 		return 'from-blue-400 to-blue-600'
-		case 'Java': 		 	return 'from-orange-400 to-orange-600'
-		case 'Kotlin': 		 	return 'from-orange-400 to-orange-600'
-		case 'C#': 		 	return 'from-pink-500 to-pink-700'
-		default: 			 	return 'from-gray-400 to-gray-500'
+		case 'C++': 		 			return 'from-red-400 to-red-600'
+		case 'React': 				return 'from-green-400 to-green-600'
+		case 'JavaScript': 		return 'from-green-400 to-green-600'
+		case 'Vue': 					return 'from-green-400 to-green-600'
+		case 'Python': 				return 'from-yellow-400 to-yellow-600'
+		case 'Unreal Engine': return 'from-blue-400 to-blue-600'
+		case 'Java': 		 			return 'from-orange-400 to-orange-600'
+		case 'Kotlin': 		 		return 'from-orange-400 to-orange-600'
+		case 'C#': 		 				return 'from-pink-500 to-pink-700'
+		default: 			 				return 'from-gray-400 to-gray-500'
 	}
 }
 
@@ -56,7 +56,7 @@ const GradientCard = ({ details, url, useGradient }) => {
 
 
 	      <div className="h-full">
-		    	<Link to={`/projects/${url}`} className="group">
+		    	<Link to={`/${url}`} className="group">
 		      	<h5 className="text-xl font-bold text-white group-hover:underline">
 		        	{details.title}
 	      		</h5>
