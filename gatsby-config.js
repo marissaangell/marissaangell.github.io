@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
 	siteMetadata: {
 		title: `Portfolio`,
@@ -19,7 +21,7 @@ module.exports = {
 			__key: "images"
 		}, 
 		{
-		resolve: 'gatsby-source-filesystem',
+			resolve: 'gatsby-source-filesystem',
 			options: {
 				"name": "pages",
 				"path": "./src/pages/"
@@ -27,7 +29,7 @@ module.exports = {
 			__key: "pages"
 		},
 		{
-		resolve: 'gatsby-source-filesystem',
+			resolve: 'gatsby-source-filesystem',
 			options: {
 				"name": "coding",
 				"path": "./content/coding/"
@@ -35,7 +37,7 @@ module.exports = {
 			__key: "coding"
 		},
 		{
-		resolve: 'gatsby-source-filesystem',
+			resolve: 'gatsby-source-filesystem',
 			options: {
 				"name": "games",
 				"path": "./content/games/"
@@ -43,7 +45,7 @@ module.exports = {
 			__key: "games"
 		},
 		{
-		resolve: 'gatsby-source-filesystem',
+			resolve: 'gatsby-source-filesystem',
 			options: {
 				"name": "vfx",
 				"path": "./content/vfx/"
@@ -52,6 +54,12 @@ module.exports = {
 		},
 		{
 			resolve: 'gatsby-plugin-mdx-frontmatter'
-		}
+		},
+		{
+			resolve: 'gatsby-plugin-root-import',
+			options: {
+				resolveModules: [path.join(__dirname, "src", "components")]
+			}
+		}, 
 	]
 };
