@@ -16,7 +16,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
       factoids: [Factoid]
       projectMedia: String @mdx
       itchEmbed: String @mdx
-      thumbnail: File
+      thumbnail: File @fileByRelativePath
     }
 
     type Factoid {
