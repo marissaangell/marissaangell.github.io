@@ -102,8 +102,8 @@ export const query = graphql`
 	            }
 	            thumbnail {
 		            childImageSharp {
-                  gatsbyImageData(width: 630, placeholder: BLURRED, transformOptions: {fit: FILL})
-		            }
+	                gatsbyImageData(height: 450, width: 630, placeholder: BLURRED, transformOptions: {cropFocus: CENTER})
+	              }
 		          }
 	          }
 	        }
