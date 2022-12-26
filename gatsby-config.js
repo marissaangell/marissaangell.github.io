@@ -13,18 +13,24 @@ module.exports = {
 		"gatsby-plugin-sharp", 
 		"gatsby-transformer-sharp",
 		{
+		  resolve: 'gatsby-source-filesystem',
+		  options: {
+		    path: `${__dirname}/gatsby-config.js`,
+		  },
+		},
+		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				"name": "images",
-				"path": "./src/assets/"
+				"name": "assets",
+				"path": `${__dirname}/src/assets/`
 			},
-			__key: "images"
+			__key: "assets"
 		}, 
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				"name": "pages",
-				"path": "./src/pages/"
+				"path": `${__dirname}/src/pages/`
 			},
 			__key: "pages"
 		},
@@ -32,7 +38,7 @@ module.exports = {
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				"name": "coding",
-				"path": "./content/coding/"
+				"path": `${__dirname}/content/coding/`
 			},
 			__key: "coding"
 		},
@@ -40,7 +46,7 @@ module.exports = {
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				"name": "games",
-				"path": "./content/games/"
+				"path": `${__dirname}/content/games/`
 			},
 			__key: "games"
 		},
@@ -48,7 +54,7 @@ module.exports = {
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				"name": "vfx",
-				"path": "./content/vfx/"
+				"path": `${__dirname}/content/vfx/`
 			},
 			__key: "vfx"
 		},
