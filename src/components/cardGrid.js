@@ -2,10 +2,16 @@ import * as React from "react"
 
 import GradientCard from './gradientCard'
 import GameCard from './gameCard'
+import VFXCard from './vfxCard'
 
 function getCard(cardInfo, useGradient){
 	switch(cardInfo.childMdx.frontmatter.category){
 		case 'games': return <GameCard 
+														details={cardInfo.childMdx.frontmatter} 
+														url={cardInfo.sourceInstanceName + "/" + cardInfo.name}
+														useGradient={useGradient} 
+													/>
+		case 'vfx': 	return <VFXCard 
 														details={cardInfo.childMdx.frontmatter} 
 														url={cardInfo.sourceInstanceName + "/" + cardInfo.name}
 														useGradient={useGradient} 

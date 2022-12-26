@@ -69,11 +69,6 @@ const GameCard = ({ details, url, useGradient=false }) => {
 		      </div>
 
 		      <Link to={`/${url}`} className="flex flex-shrink mx-10 md:mx-0">
-	          {/*<img
-	            className="object-cover h-48 rounded-lg shadow-sm w-full"
-	            src="https://www.hyperui.dev/photos/man-5.jpeg"
-	            alt=""
-	          />*/}
 	          <GatsbyImage image={coverImage} className="mt-3 mb-1 rounded-xl" />
         	</Link>
 
@@ -81,7 +76,7 @@ const GameCard = ({ details, url, useGradient=false }) => {
         </div>
 	      
 
-	      {/*<div className="flex items-center align-self-end justify-between mt-4">
+	      {/*<div className="flex items-center align-self-end justify-between mt-2">
 	        <p className={"text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r " + gradientColor}>
 	          {details.languages[0]}
 	        </p>

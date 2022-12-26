@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from 'gatsby'
 
-import Layout from '../components/layout'
-import Heading from '../components/heading'
-import CardGrid from '../components/cardGrid'
+import Layout from 'layout'
+import Heading from 'heading'
+import CardGrid from 'cardGrid'
 
 const pageTitle = 'VFX Projects'
 
@@ -36,10 +36,16 @@ export const query = graphql`
             tags
             description
             languages
+            category
             externalLinks {
               desc
               icon
               url
+            }
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(height: 450, width: 630, placeholder: BLURRED, transformOptions: {cropFocus: CENTER})
+              }
             }
           }
         }

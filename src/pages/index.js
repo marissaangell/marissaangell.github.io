@@ -61,7 +61,7 @@ const IndexPage = ({ data }) => {
 
 				<div className="divider"/>
 
-				{/*<div>
+				<div>
 					<div className="w-full flex justify-between">
 						<h1 className="text-3xl font-bold text-gray-300 text-center md:text-left">Recent VFX Work</h1>
 						<Link to="/games" className="hover:bg-gray-700 hover:text-gray-300 px-4 py-2 rounded-md text-sm font-semibold border-2 border-current">
@@ -69,7 +69,7 @@ const IndexPage = ({ data }) => {
 						</Link>
 					</div>
 					<CardGrid cards={data.allFile.group[2].nodes} />
-				</div>*/}
+				</div>
 
 			</div>
 		</Layout>
