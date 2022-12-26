@@ -42,6 +42,11 @@ export const query = graphql`
               icon
               url
             }
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(height: 450, width: 630, placeholder: BLURRED, transformOptions: {cropFocus: CENTER})
+              }
+            }
           }
         }
       }

@@ -7,7 +7,7 @@ function getCard(cardInfo, useGradient){
 	switch(cardInfo.childMdx.frontmatter.category){
 		case 'games': return <GameCard 
 														details={cardInfo.childMdx.frontmatter} 
-														url={cardInfo.sourceInstanceName + "/" + cardInfo.name} 
+														url={cardInfo.sourceInstanceName + "/" + cardInfo.name}
 														useGradient={useGradient} 
 													/>
 		default:			return <GradientCard 

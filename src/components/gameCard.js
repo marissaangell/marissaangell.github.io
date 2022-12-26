@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import { MarkGithubIcon, LinkExternalIcon } from '@primer/octicons-react'
 
@@ -28,14 +29,16 @@ function getExtLinkIcon(linkTo){
 }
 
 
-const GameCard = ({ details, url, useGradient }) => {
+const GameCard = ({ details, url, useGradient=false }) => {
+
+  let coverImage = getImage(details.thumbnail?.childImageSharp?.gatsbyImageData)
 
 	const gradientColor = (useGradient) ? getGradientColor(details.languages[0])
 																			: getGradientColor()
 
   return (
     <article className={"p-1 h-full shadow-xl rounded-2xl bg-gradient-to-r " + gradientColor}>
-		  <div className="flex flex-col justify-between h-full px-4 bg-neutral sm:px-5 sm:py-4 rounded-xl">
+		  <div className="flex flex-col justify-between h-full px-4 py-3 bg-neutral sm:px-5 sm:py-4 rounded-xl">
 		    
 		    <div className="w-full h-full">
 			    <div className="flex flex-row justify-between w-full ">
@@ -65,13 +68,14 @@ const GameCard = ({ details, url, useGradient }) => {
 			      </div>
 		      </div>
 
-		      {/*<Link to={`/${url}`} className="flex-shrink-0 hidden mt-2 sm:block mx-10">
-	          <img
+		      <Link to={`/${url}`} className="flex flex-shrink mx-10 md:mx-0">
+	          {/*<img
 	            className="object-cover h-48 rounded-lg shadow-sm w-full"
 	            src="https://www.hyperui.dev/photos/man-5.jpeg"
 	            alt=""
-	          />
-        	</Link>*/}
+	          />*/}
+	          <GatsbyImage image={coverImage} className="mt-3 mb-1 rounded-xl" />
+        	</Link>
 
 
         </div>

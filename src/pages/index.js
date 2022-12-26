@@ -100,6 +100,11 @@ export const query = graphql`
 	              icon
 	              url
 	            }
+	            thumbnail {
+		            childImageSharp {
+                  gatsbyImageData(width: 630, placeholder: BLURRED, transformOptions: {fit: FILL})
+		            }
+		          }
 	          }
 	        }
 	      }
