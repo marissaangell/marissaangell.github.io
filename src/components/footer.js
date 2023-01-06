@@ -7,7 +7,9 @@ import { MarkGithubIcon, LogoGithubIcon, LinkExternalIcon } from '@primer/octico
 
 const links = [
   { name: 'About', href: '/about'},
-  { name: 'Projects', href: '/projects'},
+  { name: 'Software', href: '/coding'},
+  { name: 'Games', href: '/games'},
+  { name: 'VFX', href: '/vfx'},
 ]
 
 export default function Footer(){

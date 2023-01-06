@@ -17,8 +17,8 @@ const IndexPage = ({ data }) => {
 				    <div className="sm:flex-grow mt-4 mx-auto">
 				      <h1 className="text-3xl md:text-5xl font-bold text-gray-300 text-center md:text-left">Hi! I'm Marissa<SparklesIcon className="inline-block h-8 w-8 md:h-12 md:w-12 pb-2 md:ml-2"/></h1>
 				      <div className="mx-auto px-6 md:px-0 md:flex-grow">
-					      <p className="text-lg md:text-2xl py-6 max-w-prose">I'm a software developer and game dev with experience in a wide range of technical areas.</p>
-					      <p className="text-lg md:text-2xl pb-8 max-w-prose">From robotics to computer graphics, 3D modelling to machine learning - this site is a showcase of the things I've been up to!</p>
+					      <p className="text-lg md:text-2xl py-6 max-w-prose">I'm a software developer and game dev with experience in a range of technical areas.</p>
+					      <p className="text-lg md:text-2xl pb-8 max-w-prose">From robotics to computer graphics, real-time VFX to machine learning - this site is a showcase of the things I've been up to!</p>
 					      <div className="w-full text-center md:text-left">
 					      	<Link to="/about" className="hover:bg-gray-700 hover:text-gray-300 px-4 py-2 rounded-md text-md md:text-lg font-semibold border-2 border-current inline-block mx-auto">
 										More About Me
