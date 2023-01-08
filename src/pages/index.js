@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => {
 					<div className="w-full flex justify-between">
 						<h1 className="text-2xl md:text-3xl font-bold text-gray-300 text-left mb-2 md:mb-0">Recent Software Projects</h1>
 						<Link to="/coding" className="block hover:bg-gray-700 hover:text-gray-300 px-4 py-2 rounded-md text-sm font-semibold border-2 border-current">
-							View All >
+							View All Software
 						</Link>
 					</div>
 					<CardGrid cards={data.allFile.group[0].nodes} />
@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => {
 					<div className="w-full flex justify-between">
 						<h1 className="text-2xl md:text-3xl font-bold text-gray-300 text-left mb-2 md:mb-0">Recent Games</h1>
 						<Link to="/games" className="hover:bg-gray-700 hover:text-gray-300 px-4 py-2 rounded-md text-sm font-semibold border-2 border-current">
-							View All >
+							View All Games
 						</Link>
 					</div>
 					<CardGrid cards={data.allFile.group[1].nodes} />
@@ -64,8 +64,8 @@ const IndexPage = ({ data }) => {
 				<div>
 					<div className="w-full flex justify-between">
 						<h1 className="text-3xl font-bold text-gray-300 text-center md:text-left">Recent VFX Work</h1>
-						<Link to="/games" className="hover:bg-gray-700 hover:text-gray-300 px-4 py-2 rounded-md text-sm font-semibold border-2 border-current">
-							All VFX
+						<Link to="/vfx" className="hover:bg-gray-700 hover:text-gray-300 px-4 py-2 rounded-md text-sm font-semibold border-2 border-current">
+							View All VFX
 						</Link>
 					</div>
 					<CardGrid cards={data.allFile.group[2].nodes} />

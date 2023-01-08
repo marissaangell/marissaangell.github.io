@@ -76,7 +76,7 @@ const GameCard = ({ details, url, useGradient=false }) => {
         </div>
 	      
 
-	      {/*<div className="flex items-center align-self-end justify-between mt-2">
+	      <div className="flex items-center align-self-end justify-between mt-2">
 	        <p className={"text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r " + gradientColor}>
 	          {details.languages[0]}
 	        </p>
@@ -87,7 +87,7 @@ const GameCard = ({ details, url, useGradient=false }) => {
 		          </li>
 		        )) }
 	        </ul>
-	      </div>*/}
+	      </div>
 
 		    
 		  </div>
