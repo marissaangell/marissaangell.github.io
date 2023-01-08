@@ -30,11 +30,8 @@ factoids:
   body: 'Gameplay Engineer'
 
 projectMedia: >-
-  <div class="w-full flex justify-center no-prose">
-  <div class="aspect-video h-full w-full flex justify-center">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/aPnM9eL-8Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  </div>
+  <YoutubeEmbed src="IiaLR9Df-R4" />
+
 
 itchEmbed: >-
   <iframe src="https://itch.io/embed/1726266?linkback=true&amp;bg_color=afbfd2&amp;link_color=0484d1" width="552" height="167" frameborder="0"><a href="https://clairenicolee.itch.io/natural-disaster">Natural Disaster (Prototype) by ClaireNicolee, gabi_ander, Marissa Angell, Meg Mordecai</a></iframe>
