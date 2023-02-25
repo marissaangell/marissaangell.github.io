@@ -10,9 +10,11 @@ import ProjectPageVFX from 'projectPageVFX'
 
 
 function getPageLayout(data){
-  switch(data.mdx.frontmatter.category){
-    case 'vfx': return <ProjectPageVFX mdx={data.mdx}/>
-    default:    return <ProjectPageDefault mdx={data.mdx}/>
+  if (data.mdx.frontmatter.pageLayout){
+    switch(data.mdx.frontmatter.pageLayout){
+      case 'media': return <ProjectPageVFX mdx={data.mdx}/>
+      default:    return <ProjectPageDefault mdx={data.mdx}/>
+    }
   }
 }
 
@@ -44,6 +46,7 @@ export const query = graphql`
         description
         longDescription
         category
+        pageLayout
         factoids {
           heading
           body
