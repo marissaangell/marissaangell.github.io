@@ -1,0 +1,55 @@
+---
+title: "Tessellation & Displacement Mapping"
+date: "2023-03-21"
+category: "coding"
+pageLayout: "media"
+
+description: "A small OpenGL app that tessellates a flat plane according to a height map image."
+
+languages:
+- "C++"
+- "OpenGL"
+
+tags:
+- "computer-graphics"
+
+factoids: 
+- heading: 'Tools & Languages'
+  body: 'C++, OpenGL'
+- heading: 'Project Type'
+  body: 'Individual Coursework (Interactive Computer Graphics)'
+
+
+---
+
+import TessPic1 from './tessellation-media/Pic1.png';
+import TessPic2 from './tessellation-media/Pic2.png';
+import TessPic3 from './tessellation-media/Pic3.png';
+import TessPic4 from './tessellation-media/Pic4.png';
+import TessPic5 from './tessellation-media/Pic5.png';
+import TessPic6 from './tessellation-media/Pic6.png';
+import TessHeight from './tessellation-media/teapot_disp.png';
+import TessNormal from './tessellation-media/teapot_normal.png';
+
+
+<ImgCarousel images={[TessPic1, TessPic2, TessPic3, TessPic4, TessPic5, TessPic6]} />
+
+<ProseWrapper>
+
+### Project Overview:
+
+The program takes in a normal map and displays it on a plane, with the ability to toggle whether or not the plane's triangulation (calculated using a geometry shader) is shown. If a displacement map is provided as a second argument, the program uses that image to move the vertices of the plane up using the displacement map values. The tessellation level of the plane is able to be changed with the arrow keys.
+
+
+</ProseWrapper>
+
+
+<div className="mx-auto grid mt-8 grid-cols-2">
+<div className="mx-auto">
+<img src={TessHeight} />
+</div>
+
+<div className="mx-auto">
+<img src={TessNormal} />
+</div>
+</div>

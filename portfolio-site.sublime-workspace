@@ -321,21 +321,7 @@
 			{
 				"buffer_size": 1606,
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
-		},
-		{
-			"file": "src/pages/about.js",
-			"settings":
-			{
-				"buffer_size": 4964,
-				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		}
 	],
 	"build_system": "",
@@ -373,22 +359,33 @@
 		"/D/Github/marissaangell.github.io",
 		"/D/Github/marissaangell.github.io/content",
 		"/D/Github/marissaangell.github.io/content/coding",
+		"/D/Github/marissaangell.github.io/content/coding/cs5610-interactive-computer-graphics",
+		"/D/Github/marissaangell.github.io/content/coding/cs5610-interactive-computer-graphics/tessellation-media",
+		"/D/Github/marissaangell.github.io/content/games",
+		"/D/Github/marissaangell.github.io/content/games/eae4500-capstone",
 		"/D/Github/marissaangell.github.io/src",
 		"/D/Github/marissaangell.github.io/src/pages",
 		"/D/Github/marissaangell.github.io/src/pages/{mdx.parent__(File)__sourceInstanceName}"
 	],
 	"file_history":
 	[
+		"/D/Github/marissaangell.github.io/content/coding/frc-2018/provotypes-power-up.mdx",
+		"/D/Github/marissaangell.github.io/content/coding/cs5610-interactive-computer-graphics/render-to-texture.mdx",
+		"/D/Github/marissaangell.github.io/src/pages/index.js",
+		"/D/Github/marissaangell.github.io/src/pages/about.js",
+		"/D/Github/marissaangell.github.io/content/coding/cs5610-interactive-computer-graphics/tessellation.mdx",
+		"/D/Github/marissaangell.github.io/content/coding/cs5610-interactive-computer-graphics/environment-mapping.mdx",
+		"/D/Github/marissaangell.github.io/content/coding/cs5610-interactive-computer-graphics/shadow-mapping.mdx",
 		"/D/Github/marissaangell.github.io/content/games/eae4500-capstone/natural-disaster.mdx",
+		"/D/Github/marissaangell.github.io/content/coding/frc-2019/provotypes-deep-space.mdx",
+		"/D/Github/marissaangell.github.io/content/coding/fa3600-new-media/interactive-historical-fiction.mdx",
+		"/D/Github/marissaangell.github.io/content/coding/cs4600-computer-graphics/mass-spring-sim.mdx",
+		"/D/Github/marissaangell.github.io/content/coding/fa3600-new-media/visual-narrative-perplexity.mdx",
 		"/D/Github/marissaangell.github.io/content/coding/portfolio-site/portfolio-site.mdx",
 		"/D/Github/marissaangell.github.io/content/games/eae3660-machinima/centipede-machinima.mdx",
 		"/D/Github/marissaangell.github.io/content/games/eae3660-machinima/Centipede_Still1.jpg",
 		"/D/Github/marissaangell.github.io/content/coding/provo-high-legacy/provo-high-legacy.mdx",
-		"/D/Github/marissaangell.github.io/content/coding/frc-2019/provotypes-deep-space.mdx",
 		"/D/Github/marissaangell.github.io/content/coding/hackathon-study-app/hackathon-study-app.mdx",
-		"/D/Github/marissaangell.github.io/content/coding/fa3600-new-media/interactive-historical-fiction.mdx",
-		"/D/Github/marissaangell.github.io/content/coding/fa3600-new-media/visual-narrative-perplexity.mdx",
-		"/D/Github/marissaangell.github.io/content/coding/frc-2018/provotypes-power-up.mdx",
 		"/D/Github/marissaangell.github.io/content/vfx/crystalize-spell/crystalize-spell.mdx",
 		"/D/Github/marissaangell.github.io/content/vfx/grenade/grenade-explosion.mdx",
 		"/D/Github/marissaangell.github.io/content/vfx/hologram/hologram.mdx",
@@ -397,7 +394,6 @@
 		"/D/Github/marissaangell.github.io/content/vfx/stylized-fire/stylized-fire.mdx",
 		"/D/Github/marissaangell.github.io/content/coding/cs3505-software-2/networked-spreadsheet.mdx",
 		"/D/Github/marissaangell.github.io/content/coding/cs4530-mobile-app-dev/android-lifestyle-app.mdx",
-		"/D/Github/marissaangell.github.io/content/coding/cs4600-computer-graphics/mass-spring-sim.mdx",
 		"/D/Github/marissaangell.github.io/content/coding/cs4600-computer-graphics/obj-renderer.mdx",
 		"/D/Github/marissaangell.github.io/content/coding/cs4600-computer-graphics/ray-trace-sim.mdx",
 		"/D/Github/marissaangell.github.io/content/coding/cs5340-nlp/nlp-information-extraction.mdx",
@@ -408,7 +404,6 @@
 		"/D/Github/marissaangell.github.io/src/components/gameCard.js",
 		"/D/Github/marissaangell.github.io/content/games/home-goods-wizard/home-goods-wizard-game.mdx",
 		"/D/Github/marissaangell.github.io/src/components/gradientCard.js",
-		"/D/Github/marissaangell.github.io/src/pages/index.js",
 		"/D/Github/marissaangell.github.io/src/pages/vfx.js",
 		"/D/Github/marissaangell.github.io/src/components/cardGrid.js",
 		"/D/Github/marissaangell.github.io/src/pages/games.js",
@@ -462,7 +457,6 @@
 		"/D/Github/marissaangell.github.io/src/components/toggleSwitch.js",
 		"/D/Github/marissaangell.github.io/package.json",
 		"/D/Github/marissaangell.github.io/src/components/detailsList.js",
-		"/D/Github/marissaangell.github.io/src/pages/about.js",
 		"/D/Github/CS4300_AI_Projects/Project0/u1116841-Proj0/shopSmart.py",
 		"/D/Github/CS4300_AI_Projects/Project0/u1116841-Proj0/buyLotsOfFruit.py",
 		"/D/Github/CS4300_AI_Projects/Project0/u1116841-Proj0/addition.py",
@@ -502,11 +496,7 @@
 		"/D/Github/marissaangell.github.io/src/pages/{mdx.parent__(File)__sourceInstanceName}/{mdx.slug}.js",
 		"/D/Github/marissaangell.github.io/src/pages/{mdx.parent__(File)__sourceInstanceName}.js/{mdx.slug}.js",
 		"/D/Github/marissaangell.github.io/src/pages/projects/{mdx.slug}.js",
-		"/D/Github/marissaangell.github.io/src/pages/posts/{mdx.slug}.js",
-		"/D/Github/marissaangell.github.io/content/post-frontmatter-template",
-		"/D/Github/marissaangell.github.io/src/pages/ex/categoryFilters.js",
-		"/D/Github/marissaangell.github.io/content/projects/provotypes-deep-space.mdx",
-		"/D/Github/marissaangell.github.io/content/projects/provotypes-power-up.mdx"
+		"/D/Github/marissaangell.github.io/src/pages/posts/{mdx.slug}.js"
 	],
 	"find":
 	{
@@ -572,8 +562,8 @@
 						"selection":
 						[
 							[
-								1114,
-								1114
+								256,
+								256
 							]
 						],
 						"settings":
@@ -587,37 +577,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/pages/about.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4964,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								950,
-								950
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSX.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 132.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"stack_multiselect": false,
 					"type": "text"
 				}
