@@ -39,16 +39,19 @@ export default function AboutPage(){
 				    		className="rounded-lg shadow-sm"
 			    		/>
             </div>
-          </div>
+          </div> 
 
           {/* Left Column */}
 		      <div className="col-start-1 col-span-2 row-start-1 peer-empty:col-span-full lg:peer-empty:px-36">
 			      <div className="text-lg">
 				      <p className="pb-6">
-				      	Hi, I'm Marissa! I'm a software engineer and game developer in my senior year of study at the University of Utah. I'm expecting to graduate with a Bachelor's in Computer Science with Entertainment Arts and Engineering emphasis in May of 2023.
+				      	Hi, I'm Marissa! I'm a software engineer and game developer. I started coding at the age of 12 and quickly fell in love with it, and now 10+ years later the magic still hasn't faded yet.
 				      </p>
+              <p className="pb-6">
+                I'm a bit of a jack-of-all-trades, and really just love learning new things. I've done a little bit of everything - robotics, UI/UX, machine learning, AI, graphic design, traditional 2D art, computer graphics, operating systems programming, and pretty much everything that goes into game development.
+              </p>
 
-				      <p className="pb-6">If you'd like to get in touch, feel free to reach out:</p>
+				      <p className="pb-6">I'm also currently looking for work! If you'd like to get in touch, feel free to reach out:</p>
 					      
 	           {/* Contact Table */}
               <div className="shadow-md overflow-hidden sm:rounded-lg max-w-lg">
@@ -67,15 +70,14 @@ export default function AboutPage(){
                   </dl>
                 </div>
               </div>
-
             </div>
 
 
             <div className="text-lg mt-6">
-              <p className="pb-6">If you'd like to take a look at a resume:</p>
+              {/*<p className="pb-6">If you'd like to take a look at a resume:</p>*/}
                 
               {/* Resume Table */}
-              <div className="shadow-md overflow-hidden sm:rounded-lg max-w-lg">
+              {/*<div className="shadow-md overflow-hidden sm:rounded-lg max-w-lg">
                 <div className="border border-base-300">
                   <dl>
                     <div className="bg-base-200 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-1 sm:px-6">
@@ -98,7 +100,10 @@ export default function AboutPage(){
                     </div>
                   </dl>
                 </div>
-              </div>
+              </div>*/}
+
+
+
             </div>
 		      </div>
         {/* Left Column - End */}
